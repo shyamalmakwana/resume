@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../img/bg.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.post {
+    font-size: 20px;
+}
+
+
+.prof_box {
+    width: 400px;
+    heigth: 400px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    color: white;
+    margin: 0 auto;
+    margin-top: 114px;
+    text-align: center;
+}
+
+.prof_pic {
+    height: 200px;
+    width: 200px;
+    border-radius: 90px;
+}
+
+.social_bt {
+    font-size: 30px;
+    word-spacing: 10px;
+}
+.social_bt a {
+    color: white;
+}
+
+.line_break {
+    width: 350px;
+    margin: 0 auto;
+    border-top: 1px solid white;
+}
+
+.bio {
+    font-size: 20px;
+    font-family: Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    background: #e6e6e6;
+    padding: 40px;
+    color: #003366;
+    width: 95.4%;
+    text-align: center;
+}
+
+.navbar {
+    background: white;
+    background-color: rgba(255,255,255,0);
+    margin: 0px;
+    padding: 0px;
+}
+.navbar::after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+nav {
+    float: right;
+    overflow: auto;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+    font-size: 20px;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 45px;
+    padding-top: 50px;
+    margin-right: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #E6E6FA;
+}
+.home {
+    float: left;
+    padding: 30px 50px;
+    font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
+    letter-spacing:0.1em;
+    text-align:center;
+    margin: 5px auto;
+    line-height: 140%;
+    font-size: 30px;
+    font-variant: small-caps;
+}
+.home a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.footer1 {
+    background: white;
+    margin: inherit;
+    padding: 15px;
+    color: #003366;
+    width: auto;
+    text-align: left;
+}

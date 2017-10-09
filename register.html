@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="css/register.css">
+<head>
+	<script src="js/jquery-1.2.6.min.js"></script>
+	<script src="js/registervalidate.js"></script>
+<title>Registeration Page</title>
+	<header>
+		<h1 id = "h1" style="font-size: 35px;
+		line-height: 45px;
+		margin: 1em 0 .6em 0;
+		color: white;
+		font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+		text-shadow: -2px 2px 3,px;
+		color: #6Cf;
+		margin-left: -10px;" align="left">Register Yourself
+		</h1>
+		<div class = "line_break"></div>
+    </header>
+</head>
+Hover over the <b>Register Yourself</b> to see animation
+<body>
+
+
+<div id="body">
+	<form name = "form" method = "post" action = "res.html">
+<table id="customers" align="center">
+    <tr>
+        <td>
+            First Name: <font color="red">*</font>
+        </td>
+        <td>
+           <input id = "firstname" type="text" class = "ps" name="firstname" placeholder="Ex: Mosleh" title="No Special Character Allowed"/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Last Name:
+        </td>
+        <td>
+            <input id = "lastname" type="text" class = "ps" name="lastname" placeholder="Ex: Uddin" title="No Special Character Allowed" />
+        </td>
+    </tr>
+	<tr>
+		<td>
+			Username: <font color="red">*</font>
+		</td>
+		<td>
+			<input id = "usrname" type="text" class = "ps" name="usrname" placeholder="moshleh123" title="No Special Character Allowed" required/>
+		</td>
+	</tr>
+    <tr>
+        <td>
+            Email: <font color="red">*</font>
+        </td>
+        <td>
+            <input type="email" class = "ps" name="email" placeholder="Ex: example@example.com" required/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Password: <font color="red">*</font>
+        </td>
+        <td>
+            <input id = "pwd" type="password" id="password" class = "ps" name="password" required>
+        </td>
+    </tr>
+	<tr>
+		<td>
+			Confirm Password: <font color="red">*</font>
+		</td>
+		<td>
+			<input id = "pwd1" type="password" id="repassword" name="pwd1" required>
+		</td>
+	</tr>
+    <tr>
+        <td>
+            Date of Birth: <font color="red">*</font>
+        </td>
+
+        <td>
+            <input type="date" class = "ps" name="birthday" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Your Website:
+        </td>
+        <td>
+            <input id = "url" type="url" name="homepage" class = "ps" placeholder="Ex: www.findsourcecode.com" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Gender:
+        </td>
+        <td>
+            <input id="radiobutton" type="radio" name="gender" value="male">Male
+			<input id="radiobutton" type="radio" name="gender" value="female">Female
+			<input id="radiobutton" type="radio" name="gender" value="other">Other
+        </td>
+    </tr>
+	<tr>
+		<td>
+			Bio:
+		</td>
+		<td>
+			<textarea rows="4" cols="50" class = "ps" placeholder="Tell us something about yourself!"></textarea>
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+			Interested in Working in <br> different city:
+		</td>
+
+		<td>
+			<input id="radiobutton" type="radio" name="choice" value="yes" checked>Yes
+			<input id="radiobutton" type="radio" name="choice" value="yes"> No
+		</td>
+	</tr>
+</table> <br>
+
+<center>
+<button  id="button" type="button">Submit</button>
+</center><br>
+</form>
+</center> <br><br><p><center>Hover on the Button to see transistion effect</center></p>
+
+<center>Already Registered? &nbsp;&nbsp; <a id="msg" href="login.html" target="_blank">Sign In </center>
+</div>
+
+</body>

@@ -1,0 +1,99 @@
+.head {
+    padding: 30px 50px;
+    font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
+    text-align:left;
+    margin: 5px auto;
+    font-size: 25px;
+    color: #003366;
+}
+
+.head:hover {
+    color: #E6E6FA;
+}
+.line_break {
+    width: 89%;
+    top: 80px;
+    margin: 0;
+    border-bottom: 1px solid black;
+    position: absolute;
+}
+
+.title {
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.info {
+    color: #000;
+}
+
+.container {
+    margin: 60px 300px;
+    font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+    font-size: 19px;
+    color: #003366;
+}
+.container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.container ul::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border: 2px dashed #aaa;
+}
+.container ul li {
+    margin: 80px 60px;
+    position: relative;
+}
+
+.container ul li > span {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -60px;
+    width: 0;
+    height: 100%;
+    border: 2px solid #aaa;
+}
+
+.container ul li > span::before, .container ul li > span::after  {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border: 2px solid #003366;
+    position: absolute;
+    border-radius: 50%;
+    left: -7px;
+    background: #fff;
+}
+
+.container ul li > span::before {
+    top: -10px;
+}
+
+.container ul li > span::after {
+    top: 100%;
+}
+
+.container ul li .year span {
+    position: absolute;
+    left: -250px;
+    width: 150px;
+    text-align: right;
+}
+
+.container ul li .year span:first-child {
+    top: 2px;
+}
+
+.container ul li .year span:last-child {
+    top: 28px;
+}
