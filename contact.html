@@ -1,135 +1,145 @@
 <html>
 <style>
-#msg {
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-}
+    #msg {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    }
 
-#button {
-    background-color: #4CAF50;
-    border: 3px;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    transition: 0.2s ease 0s;
-    font-size: 16px;
-	margin-top: 40px;
-}
-#button:hover {
-    box-shadow: inset 0 0 0 5px white;
-}
+    #button {
+        background-color: #4CAF50;
+        border: 3px;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        transition: 0.2s ease 0s;
+        font-size: 16px;
+        margin-top: 40px;
+    }
 
-.line_break {
-    width: 89%;
-    top: 82px;
-    border-bottom: 1px solid black;
-    position: absolute;
-}
+    #button:hover {
+        box-shadow: inset 0 0 0 5px white;
+    }
 
-#customers {
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-	border-collapse: collapse;
-	width: 30%;
-	margin-top: 60px;
-}
+    .line_break {
+        width: 89%;
+        top: 82px;
+        border-bottom: 1px solid black;
+        position: absolute;
+    }
 
-#customers td, #customers th {
-	border: 3px solid #ddd;
-	padding: 20px;
-}
+    #customers {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 30%;
+        margin-top: 60px;
+    }
 
-#customers tr:nth-child(even){background-color: #f2f2f2;}
+    #customers td,
+    #customers th {
+        border: 3px solid #ddd;
+        padding: 20px;
+    }
 
-#customers th {
-    padding-top: 55px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #4CAF50;
-    color: white;
-}
+    #customers tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    #customers th {
+        padding-top: 55px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #4CAF50;
+        color: white;
+    }
 
 
-input {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-}
+    input {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+    }
 
-input:focus {
-    box-shadow: inset 0 5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2);
-}
+    input:focus {
+        box-shadow: inset 0 5px 45px rgba(100, 100, 100, 0.4), 0 1px 1px rgba(255, 255, 255, 0.2);
+    }
 
-input:invalid {
-    border-color: red;
-}
+    input:invalid {
+        border-color: red;
+    }
 
-input:valid {
-    border-color: #ccc;
-}
+    input:valid {
+        border-color: #ccc;
+    }
 
-textarea:focus {
-    box-shadow: inset 0 5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2);
-}
-#h1 {
-	font-size: 35px;
-	line-height: 45px;
-	margin: 1em 0 .6em 0;
-	color: white;
-	font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
-	text-shadow: 0 -2px 0 rgba(0,0,0,0.4);
-	color: #6Cf;
-    text-align: left;
-	margin-left: 30px;
+    textarea:focus {
+        box-shadow: inset 0 5px 45px rgba(100, 100, 100, 0.4), 0 1px 1px rgba(255, 255, 255, 0.2);
+    }
 
-}
+    #h1 {
+        font-size: 35px;
+        line-height: 45px;
+        margin: 1em 0 .6em 0;
+        color: white;
+        font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+        text-shadow: 0 -2px 0 rgba(0, 0, 0, 0.4);
+        color: #6Cf;
+        text-align: left;
+        margin-left: 30px;
+
+    }
+
 </style>
+
 <head>
-	<title>Contact Form</title>
-    <h1 id = "h1">Contact Form <div class = "line_break"></div><br></h1>
-	<script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
-	<script type="text/javascript" src="js/jquery.validate.js"></script>
+    <title>Contact Form</title>
+    <h1 id="h1">Contact Form
+        <div class="line_break"></div><br></h1>
+    <script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.js"></script>
 
-	<script type="text/javascript">
-	$(document).ready(function(){
+    <script type="text/javascript">
+        $(document).ready(function() {
 
-		$("#contactform").validate();
-	});
-	</script>
+            $("#contactform").validate();
+        });
+
+    </script>
 </head>
 
 <body class="contact">
-<form method="post" action="result.html" id="contactform">
-<table id="customers" align="center">
-    <tr>
-		<td>
-            <label for="Name">Name:</label>
-        </td>
-        <td>
-            <input type="text" name="Name" id="Name" class="required" />
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <label for="Email">Email:</label>
-        </td>
-        <td>
-	       <input type="text" name="Email" id="Email" class="required email" />
-       </td>
-    </tr>
-    <tr>
-        <td>
-            <label for="Message">Message:</label>
-        </td>
-        <td>
-	        <textarea name="Message" id="Message" rows="10" cols="42" class="required"></textarea>
-        </td>
-    </tr>
-</table>
-<div class="clear"></div>
-<center>
-	<button id="button" type="submit" value="Submit">Submit</button>
-</center>
-</form>
+    <form method="post" action="result.html" id="contactform">
+        <table id="customers" align="center">
+            <tr>
+                <td>
+                    <label for="Name">Name:</label>
+                </td>
+                <td>
+                    <input type="text" name="Name" id="Name" class="required" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Email">Email:</label>
+                </td>
+                <td>
+                    <input type="text" name="Email" id="Email" class="required email" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Message">Message:</label>
+                </td>
+                <td>
+                    <textarea name="Message" id="Message" rows="10" cols="42" class="required"></textarea>
+                </td>
+            </tr>
+        </table>
+        <div class="clear"></div>
+        <center>
+            <button id="button" type="submit" value="Submit">Submit</button>
+        </center>
+    </form>
 
 </body>
+
 </html>

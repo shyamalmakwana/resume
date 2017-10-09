@@ -10,6 +10,7 @@ body {
     background-repeat: no-repeat;
     position: relative;
 }
+
 .post {
     font-size: 20px;
 }
@@ -36,6 +37,7 @@ body {
     font-size: 30px;
     word-spacing: 10px;
 }
+
 .social_bt a {
     color: white;
 }
@@ -58,10 +60,11 @@ body {
 
 .navbar {
     background: white;
-    background-color: rgba(255,255,255,0);
+    background-color: rgba(255, 255, 255, 0);
     margin: 0px;
     padding: 0px;
 }
+
 .navbar::after {
     content: "";
     display: table;
@@ -98,26 +101,28 @@ nav a {
 nav a:hover {
     color: #E6E6FA;
 }
+
 .home {
     float: left;
     padding: 30px 50px;
     font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
-    letter-spacing:0.1em;
-    text-align:center;
+    letter-spacing: 0.1em;
+    text-align: center;
     margin: 5px auto;
     line-height: 140%;
     font-size: 30px;
     font-variant: small-caps;
 }
+
 .home a {
     text-decoration: none;
     color: white;
 }
 
 .footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 .footer1 {
